@@ -20,9 +20,6 @@ int main()
         string first = line.substr(0, length / 2);
         string second = line.substr(length / 2, length);
 
-        sort(first.begin(), first.end());
-        sort(second.begin(), second.end());
-
         // Finding intersection
         string intersection;
         set_intersection(first.begin(), first.end(), second.begin(), second.end(), back_inserter(intersection));
